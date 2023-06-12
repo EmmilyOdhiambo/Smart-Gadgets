@@ -5,71 +5,81 @@
     }
   
     nav ul {
-      flex-wrap: wrap; /* Allow navigation items to wrap */
-      justify-content: center; /* Center navigation items */
-      gap: 5%; /* Adjust gap for smaller screens */
+      flex-wrap: wrap; 
+      justify-content: center; 
+      display: grid;
+      gap: 5%;
     }
   
     nav ul li {
-      margin-right: 0; /* Remove margin between navigation items */
-      margin-bottom: 10px; /* Add margin bottom for smaller screens */
+      margin-right: 0; 
+      margin-bottom: 10px; 
     }
   }
   
-  /* Add more media queries as needed */
 
   @media screen and (max-width: 768px) {
     #sign {
-      padding: 4% 10%; /* Adjust padding for smaller screens */
+      padding: 4% 10%; 
     }
   
     .Text {
-      margin: 3%; /* Adjust margin for smaller screens */
+      margin: 3%; 
     }
     .Text h1 {
-      font-size: 40px; /* Adjust font size for smaller screens */
+      font-size: 40px; 
     }
     .Text img {
-      margin-right: 0; /* Remove right margin for smaller screens */
-      height: auto; /* Reset height to maintain aspect ratio */
-      width: 100%; /* Set width to 100% for smaller screens */
+      margin-right: 0; 
+      height: auto; 
+      width: 90%; 
     }
     #explore {
-      padding: 6px; /* Adjust padding for smaller screens */
+      padding: 6px; 
     }
   }
   
-  /* Add more media queries as needed */
 
 @media screen and (max-width: 768px) {
     .Promax {
-      flex-direction: column; /* Change flex direction for smaller screens */
+      flex-direction: column; 
       display: grid;
     }
   
     #head,
     #head2,
     #cell {
-      width: 100%; /* Set width to 100% for smaller screens */
-      height: auto; /* Reset height to maintain aspect ratio */
-      margin-left: 0; /* Remove left margin for smaller screens */
-      padding-top: 10%; /* Adjust padding for smaller screens */
+      width: 90%;
+      height: auto; 
+      margin-left: 0; 
+      padding-top: 10%; 
     }
   }
   
 @media screen and (max-width: 768px) {
     #products {
-      grid-template-columns: 1fr; /* Change to a single column layout */
-      gap: 20px; /* Adjust gap for smaller screens */
+      grid-template-columns: 1fr; 
+      gap: 15px; 
     }
   
     #products img {
-      width: 100%; /* Adjust image width to fit the container */
+      width: 100%; 
     }
   
     #products button {
-      padding: 10px; /* Adjust button padding for smaller screens */
+      padding: 10px; 
     }
   
-    /* Add any other specific styles for smaller screens */
+ 
+  }
+  @media (max-width: 767px) {
+    .Image {
+      margin-left: 2%;
+      gap: 4%;
+    }
+  
+    #quoote {
+      width: 80%;
+      height: auto;
+    }
   }

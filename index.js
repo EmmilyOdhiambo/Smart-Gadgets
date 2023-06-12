@@ -1,12 +1,12 @@
 // https://dummyjson.com/products
 function generateProductCards(data) {
   const MyProducts = document.getElementById("Products");
-  // iterate through the data and create a card for each product
+  
   data.forEach((product) => {
-    // create a card element
+ 
     const card = document.createElement("div");
     card.classList.add("product-card");
-    // Set the card content using the product data
+   
     card.innerHTML = `
               
             
@@ -17,7 +17,7 @@ function generateProductCards(data) {
             <button>ADD TO CART</button>
             </div>
         `;
-    // append the card to the product container
+
     MyProducts.appendChild(card);
   });
 }
@@ -25,9 +25,9 @@ function fetchProducts() {
   fetch("https://dummyjson.com/products")
     .then((response) => response.json())
     .then((data) => {
-      // Get the first 8 products from the data
+   
       const returnedData = data.products.slice(0, 8);
-      // call the function to generate cards
+    
       generateProductCards(returnedData);
     });
 }
